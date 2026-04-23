@@ -68,6 +68,6 @@ Sharpe ratio measures excess return over risk-free rate per unit of volatility:
 Black-Litterman blends market-implied equilibrium returns with investor views (`P`, `Q`, `Omega`) to produce posterior expected returns that are usually more stable than plain historical means.
 
 
-## Screenshot Placeholders
+## Screenshot
 <img width="1786" height="874" alt="image" src="https://github.com/user-attachments/assets/93abcf0a-8aad-453b-ac14-595e5b778689" />
 
