@@ -67,61 +67,7 @@ Sharpe ratio measures excess return over risk-free rate per unit of volatility:
 ### Black-Litterman
 Black-Litterman blends market-implied equilibrium returns with investor views (`P`, `Q`, `Omega`) to produce posterior expected returns that are usually more stable than plain historical means.
 
-## Installation
-
-```bash
-pip install -r requirements.txt
-```
-
-## Run (CLI)
-
-```bash
-python main.py
-```
-
-Outputs include:
-- optimization summary (weights, return, vol, Sharpe)
-- backtest metric summary
-- saved charts:
-  - `efficient_frontier.png`
-  - `backtest_comparison.png`
-
-## Run (Streamlit)
-
-```bash
-streamlit run app/streamlit_app.py
-```
-
-Dashboard allows:
-- ticker/date/risk-free inputs
-- short-selling toggle
-- max-weight control
-- optimization and frontier visualization
-- strategy comparison and performance metrics
-
-## Example Usage
-
-1. Set tickers: `AAPL,MSFT,GOOGL,AMZN`
-2. Set range: `2021-01-01` to today
-3. Set risk-free rate: `0.04`
-4. Run optimization and inspect weights/frontier/backtest metrics
-
-## Configuration
-
-Defaults live in `config/settings.py`:
-- data tickers and date windows
-- risk-free rate and optimizer settings
-- simulation count and random seed
-- optional factor and sector constraint hooks
 
 ## Screenshot Placeholders
+<img width="1786" height="874" alt="image" src="https://github.com/user-attachments/assets/93abcf0a-8aad-453b-ac14-595e5b778689" />
 
-- `docs/screenshots/dashboard_overview.png` (placeholder)
-- `docs/screenshots/frontier_plot.png` (placeholder)
-- `docs/screenshots/backtest_comparison.png` (placeholder)
-
-## Extension Ideas
-
-- Replace static factor signal map with model-driven factor estimation
-- Integrate rolling-window rebalancing and transaction costs in backtest loop
-- Add downside-risk metrics (Sortino, CVaR) and robust optimization variants
